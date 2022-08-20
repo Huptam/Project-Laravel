@@ -53,7 +53,7 @@ Rename or copy `.env.example` file to `.env` 1.`php artisan key:generate` to gen
 
 #### Landing Page
 
-![screenshots](lading_page.png)
+![Lading Page](https://raw.githubusercontent.com/Huptam/Project-Laravel/master/screenshots/lading_page.png)
 
 #### Create product
 
