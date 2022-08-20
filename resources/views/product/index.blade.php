@@ -61,16 +61,16 @@
                             <td>{{ $product->created_at }}</td>
                             <td>{{ $product->updated_at }}</td>
                             <td>
-                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                                     Show
-                                  </button>
-                                @include('product.show')
+                                  </button> -->
+                                <!-- @include('product.show') -->
                                 <a href="{{url('/editProduct/'.$product->id)}}" title="Editar" class="btn btn-primary">
                                 <i class="fas fa-edit" title="Editar"></i></a>
                                 <form method="POST" action="{{ url('/deleteProduct/'.$product->id) }}" accept-charset="UTF-8" style="display:inline">
                                     {{ method_field('DELETE') }}
                                     {{ csrf_field() }}
-                                    <button type="submit" class="btn btn-danger btn-delete" title="Eliminar" onclick="return confirm(&quot; ¿Realmente desea eliminar este producto? &quot;)"><i class="fas fa-trash" aria-hidden="true"></i></button>
+                                    <button type="submit" class="btn btn-danger btn-delete" title="Eliminar" onclick="return confirm('¿Realmente desea eliminar este producto?')"><i class="fas fa-trash" aria-hidden="true"></i></button>
                                 </form>
                             </td>
                         </tr>
